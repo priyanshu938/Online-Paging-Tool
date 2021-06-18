@@ -106,7 +106,9 @@ li a {
 }
 
 li a:hover {
-  background-color: gray;
+  color: #00ff00;
+  text-shadow: 5px;
+  text-transform: uppercase;
 }
 .b {
   font-size: large;
