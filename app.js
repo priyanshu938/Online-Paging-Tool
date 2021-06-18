@@ -4,8 +4,9 @@ const app = express();
 app.use(bodyParser.urlencoded({ extended: true }));
 const mongoose = require("mongoose");
 // mongoose.connect(process.env.MONGO_URL, { useNewUrlParser: true });
-mongoose.connect('mongodb://localhost:27017/reviewsDB', { useNewUrlParser: true });
-
+mongoose.connect("mongodb://localhost:27017/reviewsDB", {
+  useNewUrlParser: true,
+});
 
 const reviewSchema = new mongoose.Schema({
   name: String,
