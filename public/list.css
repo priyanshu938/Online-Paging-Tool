@@ -1,0 +1,67 @@
+body {
+  background-color: black;
+  text-align: center;
+  color: aliceblue;
+}
+div {
+  width: 1000px;
+  height: 1000px;
+  align-items: center;
+}
+h1 {
+  margin-top: 48.44;
+  margin-left: 19px;
+  border-top-width: 9px;
+  padding-top: 54px;
+  border-bottom-width: 14px;
+  font-size: 50px;
+  font-family: cursive;
+  font-weight: bold;
+  font-style: oblique;
+  color: deeppink;
+}
+h2,
+h3 {
+  margin-top: 48.44;
+  margin-left: 19px;
+  border-top-width: 9px;
+  padding-top: 20px;
+  border-bottom-width: 14px;
+  font-size: 25px;
+  font-family: cursive;
+  font-weight: bold;
+  font-style: oblique;
+  color: #fffaf0;
+}
+td {
+  text-align: center;
+  font-size: 20px;
+  font-family: cursive;
+  font-weight: bold;
+}
+table {
+  text-align: center;
+  margin-right: 250px;
+  margin-left: 300px;
+}
+button {
+  background-color: rgb(50, 204, 196);
+  width: 30px;
+  height: 30px;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+button:hover {
+  color: black;
+  background-color: white;
+}
+.back {
+  background-color: red;
+  border-radius: 10px;
+  width: 100px;
+  height: 30px;
+}
+.back :hover {
+  background-color: black;
+  color: white;
+}

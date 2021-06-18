@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paging</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>Reviews</h1>
+    <br><br>
+    <% for(var i=comments.length-1;i>=0;--i){ %>
+        <default style="float: left;margin-left: 100px;">
+
+            <img style=" width: 30px;
+    height: 30px;
+    content: icon;
+    display: inline;" src="dp icon.png" alt="" srcset="">
+            <p style="display: inline;"><b
+                    style="color: yellowgreen; font-size: large;font-family: cursive;padding-left: 15px;">
+                    <%=comments[i].name %> :
+                </b>
+                <%=comments[i].review %>
+            </p>
+            <p style="display: inline;"><b
+                    style="color: burlywood; font-size: large;font-family: cursive;padding-left: 15px;">Rating :</b>
+
+                <% for(var j=1;j<=parseInt(comments[i].rating);j++){ %>
+                    ⭐ <%}%>
+            </p><br><br>
+            <disp_time style="padding-left:700px">
+                <%=comments[i].time %>
+            </disp_time>
+        </default><br><br><br><br><br>
+        <hr style="height:1px;color: gray;" />
+        <br><br><br><br><br>
+        <% } %>
+            <br><br><br>
+            <choose>
+
+                <form action="/reviews" method="POST" autocomplete="off">
+                    <br><br>
+                    <button class="back" type="submit" style="background-color:  red;width: 150px;" name="comment">Write
+                        a
+                        Comment</button>
+
+                    <button class="back" name="back" type="submit" style="background-color:orange;">Home</button>
+
+
+
+                </form>
+            </choose>
+            <br><br>
+</body>
+
+</html>

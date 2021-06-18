@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paging</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <comment id="comment">
+        <h1 style="color: orange;">Comment Section</h1>
+        <div>
+            <form action="/comment" method="POST" autocomplete="off">
+                <br>
+                <br>
+                <label style="float: left;float: left;padding-left: 100px;" for="">Name :</label><br><br>
+                <input size="100" type="text" name="name" placeholder="Enter your full name"><br><br><br>
+                <label style="margin-right: 450px;" for="">Rating :</label><br><br>
+                <rating style="float:left;display:inline;padding-left: 145px;">
+                    <input style=" border-radius: 5px;width: 20px;height: 20px;" type="radio" value="3" name="rating">
+                    <label for="3">3</label><br>
+                    <input style=" border-radius: 5px;width: 20px;height: 20px;" value="4" type="radio" name="rating">
+                    <label for="4">4</label><br>
+                    <input style=" border-radius: 5px;width: 20px;height: 20px;" value="5" type="radio" name="rating">
+                    <label for="5">5</label><br><br>
+                </rating><br><br><br><br><br><br>
+                <label for="" style="margin-right: 380px;">Write your review :</label><br><br>
+                <textarea style="border-radius: 5px;" type="text" name="review" placeholder="Write your review"
+                    cols="65" rows="10"></textarea><br><br><br><br>
+                <button class="back" type="submit" style="background-color:  red;" name="post">Post</button>
+
+                <button class="back" name="back" type="submit" style="background-color:orange;">Home</button>
+
+
+
+            </form>
+        </div>
+    </comment>
+    <br><br>
+</body>
+
+</html>
