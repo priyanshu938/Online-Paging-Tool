@@ -325,10 +325,9 @@ app.post("/comment", function (req, res) {
     });
     user.save(function (err) {
       if (!err) {
+        res.redirect("/reviews");
       }
     });
-
-    res.redirect("/");
   }
 });
 app.get("/reviews", function (req, res) {
