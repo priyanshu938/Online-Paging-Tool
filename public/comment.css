@@ -1,0 +1,73 @@
+body {
+  background-color: #272727;
+  text-align: center;
+  color: aliceblue;
+}
+div {
+  border: 5px solid rgb(128, 0, 111);
+  border-radius: 132px;
+  width: 700px;
+  height: 500px;
+  align-items: center;
+  border-left-width: 34.988;
+  margin-right: 200px;
+  margin-top: 100px;
+  margin-left: 300px;
+}
+input {
+  border-radius: 5px;
+  width: 500px;
+  height: 30px;
+}
+
+button {
+  border-radius: 10px;
+  width: 100px;
+  height: 30px;
+}
+button:hover {
+  background-color: black;
+  color: white;
+}
+h1 {
+  margin-left: 25px;
+  border-top-width: 9px;
+  border-bottom-width: 14px;
+  font-size: 50px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: bold;
+  font-style: oblique;
+  color: orange;
+}
+.name-label {
+  float: left;
+  float: left;
+  padding-left: 100px;
+}
+.rating-label {
+  margin-right: 450px;
+}
+.rating {
+  float: left;
+  display: inline;
+  padding-left: 145px;
+}
+.rating-3,
+.rating-4,
+.rating-5 {
+  border-radius: 5px;
+  width: 20px;
+  height: 20px;
+}
+.write-review-label {
+  margin-right: 350px;
+}
+.text-area {
+  border-radius: 5px;
+}
+.post {
+  background-color: red;
+}
+.home {
+  background-color: orange;
+}

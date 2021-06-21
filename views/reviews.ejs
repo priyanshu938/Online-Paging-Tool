@@ -4,75 +4,41 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Paging</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="reviews.css" />
   </head>
 
   <body>
     <h1>Reviews</h1>
     <br /><br />
     <% for(var i=comments.length-1;i>=0;--i){ %>
-    <default style="float: left; margin-left: 100px">
-      <img
-        style="width: 30px; height: 30px; content: icon; display: inline"
-        src="dp icon.png"
-        alt=""
-        srcset=""
-      />
-      <p style="display: inline">
-        <b
-          style="
-            color: yellowgreen;
-            font-size: large;
-            font-family: cursive;
-            padding-left: 15px;
-          "
-        >
-          <%=comments[i].name %> :
-        </b>
+    <default class="default">
+      <img class="dp-icon" src="dp icon.png" alt="" srcset="" />
+      <p>
+        <b class="comment-name"> <%=comments[i].name %> : </b>
         <%=comments[i].review %>
       </p>
-      <p style="display: inline">
-        <b
-          style="
-            color: burlywood;
-            font-size: large;
-            font-family: cursive;
-            padding-left: 15px;
-          "
-          >Rating :</b
-        >
+      <p>
+        <b class="rating">Rating :</b>
 
         <% for(var j=1;j<=parseInt(comments[i].rating);j++){ %> ⭐ <%}%>
       </p>
       <br /><br />
-      <disp_time style="padding-left: 700px">
+      <disp_time class="comment-time">
         <%=comments[i].time %>
       </disp_time> </default
     ><br /><br /><br /><br /><br />
-    <hr style="height: 1px; color: gray" />
+    <hr />
     <br /><br /><br /><br /><br />
     <% } %>
     <br /><br /><br />
     <choose>
       <form action="/reviews" method="POST" autocomplete="off">
         <br /><br />
-        <button
-          class="back"
-          type="submit"
-          style="background-color: red; width: 150px"
-          name="comment"
-        >
+        <button class="back" type="submit" name="comment">
           Write a Comment
         </button>
 
-        <button
-          class="back"
-          name="back"
-          type="submit"
-          style="background-color: orange"
-        >
-          Home
-        </button>
+        <button class="home" name="back" type="submit">Home</button>
       </form>
     </choose>
     <br /><br />

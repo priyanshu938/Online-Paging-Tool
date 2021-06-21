@@ -9,20 +9,20 @@ div {
   align-items: center;
 }
 h1 {
-  margin-top: 48.44;
+  margin-top: 48.44px;
   margin-left: 19px;
   border-top-width: 9px;
   padding-top: 54px;
   border-bottom-width: 14px;
   font-size: 50px;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-weight: bold;
   font-style: oblique;
   color: deeppink;
 }
 h2,
 h3 {
-  margin-top: 48.44;
+  margin-top: 48.44px;
   margin-left: 19px;
   border-top-width: 9px;
   padding-top: 20px;
@@ -36,7 +36,7 @@ h3 {
 td {
   text-align: center;
   font-size: 20px;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
   font-weight: bold;
 }
 table {
@@ -64,4 +64,7 @@ button:hover {
 .back :hover {
   background-color: black;
   color: white;
+}
+.pageHeading {
+  margin-top: 80px;
 }

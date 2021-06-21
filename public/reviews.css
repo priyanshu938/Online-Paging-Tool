@@ -1,0 +1,64 @@
+body {
+  background-color: #272727;
+  text-align: center;
+  color: aliceblue;
+}
+h1 {
+  margin-left: 25px;
+  border-top-width: 9px;
+  border-bottom-width: 14px;
+  font-size: 50px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: bold;
+  font-style: oblique;
+  color: rgb(255, 0, 0);
+}
+
+button {
+  border-radius: 10px;
+  width: 100px;
+  height: 30px;
+}
+.default {
+  float: left;
+  margin-left: 100px;
+}
+.dp-icon {
+  width: 30px;
+  height: 30px;
+  content: icon;
+  display: inline;
+}
+p {
+  display: inline;
+}
+.comment-name {
+  color: yellowgreen;
+  font-size: large;
+  font-family: cursive;
+  padding-left: 15px;
+}
+.rating {
+  color: burlywood;
+  font-size: large;
+  font-family: cursive;
+  padding-left: 15px;
+}
+.comment-time {
+  padding-left: 700px;
+}
+hr {
+  height: 1px;
+  color: gray;
+}
+.back {
+  background-color: red;
+  width: 150px;
+}
+.home {
+  background-color: orange;
+}
+button:hover {
+  background-color: black;
+  color: white;
+}
