@@ -2,7 +2,6 @@ body {
   background-color: #272727;
   text-align: center;
   color: aliceblue;
-  
 }
 div {
   border: 5px solid rgb(128, 0, 111);
@@ -67,7 +66,7 @@ h1 {
   border-top-width: 9px;
   border-bottom-width: 14px;
   font-size: 50px;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-weight: bold;
   font-style: oblique;
   color: rgb(255, 0, 0);
@@ -75,7 +74,7 @@ h1 {
 header {
   text-align: center;
   font-size: 50px;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-weight: bold;
   font-style: oblique;
   margin-left: 100px;
@@ -120,8 +119,10 @@ li a:hover {
 }
 footer {
   margin-left: 530px;
-
 }
-.insta,.fb,.linkedIn,.github {
+.insta,
+.fb,
+.linkedIn,
+.github {
   float: left;
 }
