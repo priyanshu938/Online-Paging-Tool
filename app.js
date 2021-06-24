@@ -5,11 +5,7 @@ const alert = require("alert");
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use("/favicon.ico", express.static("favicon.ico"));
 const mongoose = require("mongoose");
-// mongoose.connect(process.env.MONGO_URL, { useNewUrlParser: true });
-mongoose.connect("mongodb://localhost:27017/reviewsDB", {
-  useNewUrlParser: true,
-});
-
+mongoose.connect(process.env.MONGO_URL, { useNewUrlParser: true });
 const reviewSchema = new mongoose.Schema({
   name: String,
   review: String,
