@@ -6,8 +6,13 @@ body {
   text-align: center;
   color: aliceblue;
   overflow-x: hidden;
+  scrollbar-width: none;
 }
-html{
+body::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+html {
   scroll-behavior: smooth;
 }
 .main {
@@ -20,16 +25,16 @@ html{
   margin-top: 100px;
   margin-left: 300px;
 }
-.about-div{
-  width:800px;
-  height:500px;
-  padding-left:30px;
+.about-div {
+  width: 800px;
+  height: 500px;
+  padding-left: 30px;
 }
-.use-div{
- padding-right: 100px;
+.use-div {
+  padding-right: 100px;
 }
-.contact-div{
-  padding-left:30px;
+.contact-div {
+  padding-left: 30px;
 }
 input {
   border-radius: 5px;
@@ -88,7 +93,6 @@ h1 {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-weight: bold;
   font-style: oblique;
-  
 }
 .header {
   font-size: 50px;
