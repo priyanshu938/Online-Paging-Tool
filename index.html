@@ -7,6 +7,8 @@
     <title>Paging</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 </head>
 
 <body>
@@ -23,7 +25,7 @@
 
     <p class="header">Made in 💖 by Priyanshu.</p>
 
-    <div class="main">
+    <div class="main" data-aos="zoom-out">
         <h1>Online Paging Tool</h1><br><br>
         <form action="/" method="POST" autocomplete="off">
             <input size="100" type="text" name="num1" placeholder="Enter number of frames"><br><br><br>
@@ -38,7 +40,7 @@
     </div>
     <br><br>
     <about class="about">
-        <div class="about-div">
+        <div class="about-div" data-aos="fade-right">
             <h1 id="about">About</h1>
             <p class="b">This is an Online Page Replacement tool developed by Priyanshu Tiwari,
                 a Computer Science Engineering student of Amity University Lucknow Campus.The Online Paging Tool is a
@@ -55,8 +57,8 @@
             </p>
         </div>
     </about>
-    <use class="use">
-        <div class="use-div">
+    <use class="use" >
+        <div class="use-div" data-aos="fade-left">
             <h1 id="use"> How to use? <br></h1>
             <p class="b">-> Enter the number of frames.
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>-> Enter the page reference
@@ -65,15 +67,15 @@
             </p>
         </div>
     </use>
-    <contact class="contact">
-        <div class="contact-div">
+    <contact class="contact" >
+        <div class="contact-div" data-aos="fade-right">
 
             <h1 id="contact"> Contact Us <br></h1>
             <p class="b"> If you found any type of bug while using this tool, <br>
                 feel free to contact us so that we can rectify it <br> as soon as possible.......<br>
         </div>
 
-        <footer>
+        <footer data-aos="fade-up">
             <ul>
 
                 <li class="insta"><a href="https://www.instagram.com/priyanshu_tiwari_6789/"><i class="fab fa-instagram"
@@ -93,6 +95,11 @@
         </p>
     </contact>
     <br><br>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  
 </body>
 
 </html>
