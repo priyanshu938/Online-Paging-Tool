@@ -126,3 +126,6 @@ footer {
 .github {
   float: left;
 }
+#about , #use ,#contact{
+  color :white;
+}
