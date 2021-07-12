@@ -96,8 +96,9 @@ h1 {
 
 img {
   width: 100px;
-  height: 70px;
+  height: 90px;
   content: icon;
+  padding-left:50px;
   display: inline block;
 }
 ul {
