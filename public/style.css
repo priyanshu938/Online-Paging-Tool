@@ -150,6 +150,11 @@ li a:hover {
   text-decoration-style: solid;
   text-decoration-thickness: 3px;
 }
+li:hover {
+  transform: translateY(-4px);
+  transition: 0.3s;
+  text-shadow: 1px 1px grey;
+}
 .b {
   font-size: large;
   font-family: "Inconsolata", monospace;
@@ -232,4 +237,7 @@ footer {
   color: #bfbfbf;
   text-decoration: underline;
   text-decoration-color: #ffcc66;
+}
+.social-icons {
+  font-size: 40px;
 }
