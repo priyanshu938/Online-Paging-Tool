@@ -1,3 +1,4 @@
+/* *{border:2px solid red;} */
 body {
   background-color: #272727;
   text-align: center;
@@ -71,14 +72,28 @@ h1 {
   font-style: oblique;
   color: rgb(255, 0, 0);
 }
-header {
-  text-align: center;
+.header  {
   font-size: 50px;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-weight: bold;
   font-style: oblique;
-  margin-left: 100px;
+  margin-left: 360px;
+  animation: type-header 5s steps(23);
+  animation-iteration-count: infinite;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 4px solid #bfbfbf;
+  width: 23ch;
 }
+@keyframes type-header {
+  0% {
+    width: 0ch;
+  }
+  100% {
+    width: 21ch;
+  }
+}
+
 img {
   width: 100px;
   height: 70px;
@@ -116,6 +131,7 @@ li a:hover {
   font-weight: bold;
   padding: 10px 10px;
   margin-top: 20px;
+  line-height: 50px;
 }
 footer {
   margin-left: 530px;
@@ -125,4 +141,73 @@ footer {
 .linkedIn,
 .github {
   float: left;
+}
+.about {
+  text-align: start;
+}
+.use {
+  text-align: end;
+  
+}
+.contact {
+  text-align: start;
+}
+
+
+#about {
+  animation: type-about 3s steps(5);
+  animation-iteration-count: infinite;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 4px solid #bfbfbf;
+  width: 5ch;
+}
+@keyframes type-about {
+  0% {
+    width: 0ch;
+  }
+  100% {
+    width: 6ch;
+  }
+}
+#use{
+  animation: type-use 3s steps(10);
+  animation-iteration-count: infinite;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 4px solid #bfbfbf;
+  width: 10ch;
+  padding-left: 900px;
+}
+@keyframes type-use {
+  0% {
+    width: 0ch;
+  }
+  100% {
+    width: 10ch;
+  }
+}
+#contact{
+  animation: type-contact 3s steps(10);
+  animation-iteration-count: infinite;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 4px solid #bfbfbf;
+  width: 10ch;
+}
+@keyframes type-contact {
+  0% {
+    width: 0ch;
+  }
+  100% {
+    width: 10ch;
+  }
+}
+#about,
+#use,
+#contact {
+  color: #bfbfbf;
+  text-decoration: underline;
+  text-decoration-color: #ffcc66;
+  
 }
