@@ -1,10 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap");
 /* *{border:2px solid red;} */
 body {
   background-color: #272727;
   text-align: center;
   color: aliceblue;
 }
-div {
+.main {
   border: 5px solid rgb(128, 0, 111);
   border-radius: 132px;
   width: 700px;
@@ -15,6 +17,18 @@ div {
   margin-top: 100px;
   margin-left: 300px;
 }
+.about-div{
+  width:800px;
+  height:500px;
+  padding-left:30px;
+}
+.use-div{
+ padding-right: 100px;
+  
+}
+.contact-div{
+  padding-left:30px;
+}
 input {
   border-radius: 5px;
   width: 500px;
@@ -22,6 +36,8 @@ input {
 }
 
 button {
+  font-family: "Fugaz One", cursive;
+  font-size: 15px;
   border-radius: 10px;
   width: 100px;
   height: 30px;
@@ -70,9 +86,9 @@ h1 {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-weight: bold;
   font-style: oblique;
-  color: red
+  color: red;
 }
-.header  {
+.header {
   font-size: 50px;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-weight: bold;
@@ -98,7 +114,7 @@ img {
   width: 100px;
   height: 90px;
   content: icon;
-  padding-left:50px;
+  padding-left: 50px;
   display: inline block;
 }
 ul {
@@ -119,7 +135,6 @@ li a {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  
 }
 
 li a:hover {
@@ -128,11 +143,10 @@ li a:hover {
   text-decoration-color: goldenrod;
   text-decoration-style: solid;
   text-decoration-thickness: 3px;
-  
 }
 .b {
   font-size: large;
-  font-family: cursive;
+  font-family: "Inconsolata", monospace;
   font-weight: bold;
   padding: 10px 10px;
   margin-top: 20px;
@@ -152,12 +166,10 @@ footer {
 }
 .use {
   text-align: end;
-  
 }
 .contact {
   text-align: start;
 }
-
 
 #about {
   animation: type-about 3s steps(5);
@@ -175,14 +187,14 @@ footer {
     width: 6ch;
   }
 }
-#use{
+#use {
   animation: type-use 3s steps(10);
   animation-iteration-count: infinite;
   overflow: hidden;
   white-space: nowrap;
   border-right: 4px solid #bfbfbf;
   width: 10ch;
-  padding-left: 900px;
+  padding-left: 750px;
 }
 @keyframes type-use {
   0% {
@@ -192,7 +204,7 @@ footer {
     width: 10ch;
   }
 }
-#contact{
+#contact {
   animation: type-contact 3s steps(10);
   animation-iteration-count: infinite;
   overflow: hidden;
@@ -214,5 +226,4 @@ footer {
   color: #bfbfbf;
   text-decoration: underline;
   text-decoration-color: #ffcc66;
-  
 }
