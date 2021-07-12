@@ -70,7 +70,7 @@ h1 {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-weight: bold;
   font-style: oblique;
-  color: rgb(255, 0, 0);
+  color: red
 }
 .header  {
   font-size: 50px;
@@ -118,12 +118,16 @@ li a {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  
 }
 
 li a:hover {
-  color: #00ff00;
-  text-shadow: 5px;
   text-transform: uppercase;
+  text-decoration: underline;
+  text-decoration-color: goldenrod;
+  text-decoration-style: solid;
+  text-decoration-thickness: 3px;
+  
 }
 .b {
   font-size: large;
