@@ -33,6 +33,16 @@ input {
   width: 550px;
   height: 30px;
 }
+input:focus,textarea:focus {
+  outline: none !important;
+  border-color: black ;
+  box-shadow: 0 0 30px #719ECE;
+}
+input::placeholder,textarea::placeholder {
+  font-family: "Inconsolata", monospace;
+  font-weight: bold;
+  color: gray;
+}
 .name-input {
   margin-right: 50px;
 }
@@ -60,13 +70,15 @@ input {
 .btn:hover {
   cursor: pointer;
 }
-.blue {
-  color: #55acee;
-  border: 2px #55acee solid;
+
+.red {
+  color: #e74c3c;
+  border: 2px #e74c3c solid;
 }
-.blue:hover {
-  background-color: #55acee;
+
+.red:hover {
   color: #fff;
+  background-color: #e74c3c;
 }
 .green {
   color: #2ecc71;
@@ -76,7 +88,6 @@ input {
   color: #fff;
   background-color: #2ecc71;
 }
-
 h1 {
   margin-left: 25px;
   border-top-width: 9px;

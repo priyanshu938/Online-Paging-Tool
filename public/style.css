@@ -40,11 +40,21 @@ html {
   padding-left: 30px;
 }
 input {
-  border-radius: 5px;
+  border-radius: 2px;
   width: 500px;
   height: 30px;
+  text-decoration: none;
 }
-
+input:focus {
+  outline: none !important;
+  border-color: black ;
+  box-shadow: 0 0 30px #719ECE;
+}
+input::placeholder {
+  font-family: "Inconsolata", monospace;
+  font-weight: bold;
+  color: gray;
+}
 .buttons {
   text-align: center;
   text-transform: uppercase;
