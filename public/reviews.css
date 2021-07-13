@@ -81,15 +81,15 @@ html {
   color: #fff;
   background-color: #e74c3c;
 }
-
-.purple {
-  color: #9b59b6;
-  border: 2px #9b59b6 solid;
+.green {
+  color: #2ecc71;
+  border: 2px #2ecc71 solid;
 }
-.purple:hover {
+.green:hover {
   color: #fff;
-  background-color: #9b59b6;
+  background-color: #2ecc71;
 }
+
 .default {
   float: left;
   margin-left: 100px;
