@@ -21,10 +21,12 @@ html {
   height: 450px;
   align-items: center;
   margin-right: 200px;
-  margin-top: 100px;
+  margin-top: 50px;
   margin-left: 270px;
-  margin-bottom: 100px;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  margin-bottom: 20px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 .about-div {
   width: 800px;
@@ -66,7 +68,7 @@ input {
 }
 
 .btn:hover {
-  cursor:pointer;
+  cursor: pointer;
 }
 .blue {
   color: #55acee;
@@ -106,7 +108,6 @@ input {
 }
 h1 {
   margin-left: 25px;
-  padding-top: 50px;
   border-top-width: 9px;
   border-bottom-width: 14px;
   font-size: 50px;
@@ -114,7 +115,10 @@ h1 {
   font-weight: bold;
   font-style: oblique;
   color: #adadad;
-  text-decoration: underline overline #FF3028;
+  text-decoration: underline overline #ff3028;
+}
+.tool-name {
+  padding-top: 50px;
 }
 .header {
   font-size: 50px;
@@ -181,7 +185,7 @@ li:hover {
   font-size: large;
   font-family: "Inconsolata", monospace;
   font-weight: bold;
-  padding: 10px 10px;
+  padding: 10px;
   margin-top: 20px;
   line-height: 50px;
 }
