@@ -30,35 +30,34 @@ html {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-weight: bold;
   font-style: oblique;
-  margin-left: 400px;
-  animation: type-header 3s steps(7);
+  margin:auto;
+  margin-top: 50px;margin-bottom: 50px;
+  animation: type-header 3s steps(8);
   animation-iteration-count: infinite;
   overflow: hidden;
   white-space: nowrap;
   border-right: 4px solid #bfbfbf;
-  width: 7ch;
+  width: 8ch;
 }
 @keyframes type-header {
   0% {
     width: 0ch;
   }
   100% {
-    width: 7ch;
+    width: 8ch;
   }
 }
 .buttons {
-  text-align: center;
-  text-transform: uppercase;
-  font-size: 20px;
   width: 500px;
   height: 50px;
-  padding-left: 350px;
-  margin-bottom: 100px;
+  margin:auto;
+  margin-bottom: 50px;
+
 }
 .btn {
   cursor: pointer;
   margin: 10px;
-  border-radius: 1px;
+  border-radius: 5px;
   text-decoration: none;
   padding: 10px;
   font-size: 22px;
