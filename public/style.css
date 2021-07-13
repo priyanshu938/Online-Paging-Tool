@@ -18,11 +18,11 @@ html {
 .main {
   border-radius: 2px;
   width: 700px;
-  height: 400px;
+  height: 450px;
   align-items: center;
   margin-right: 200px;
   margin-top: 100px;
-  margin-left: 300px;
+  margin-left: 270px;
   margin-bottom: 100px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
@@ -54,7 +54,7 @@ input {
 .btn {
   cursor: pointer;
   margin: 10px;
-  border-radius: 5px;
+  border-radius: 1px;
   text-decoration: none;
   padding: 10px;
   font-size: 22px;
@@ -106,13 +106,15 @@ input {
 }
 h1 {
   margin-left: 25px;
+  padding-top: 50px;
   border-top-width: 9px;
   border-bottom-width: 14px;
   font-size: 50px;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-weight: bold;
   font-style: oblique;
-  color: #ffcc66;
+  color: #adadad;
+  text-decoration: underline overline #FF3028;
 }
 .header {
   font-size: 50px;
