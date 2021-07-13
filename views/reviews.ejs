@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Paging</title>
     <link rel="stylesheet" href="reviews.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
 
   <body>
-    <h1>Reviews</h1>
+    <h1 class="header">Reviews</h1>
     <br /><br />
     <% for(var i=comments.length-1;i>=0;--i){ %>
-    <default class="default">
+    <default class="default" data-aos="fade-up">
       <img class="dp-icon" src="dp icon.png" alt="" srcset="" />
       <p>
         <b class="comment-name"> <%=comments[i].name %> : </b>
@@ -34,13 +35,18 @@
     <choose>
       <form action="/reviews" method="POST" autocomplete="off">
         <br /><br />
-        <button class="back" type="submit" name="comment">
-          Write a Comment
-        </button>
-
-        <button class="home" name="back" type="submit">Home</button>
+        <div class="buttons">
+          <button class="btn purple" type="submit" name="comment">
+            Write a Comment
+          </button>
+          <button class="btn red" name="back" type="submit">Home</button>
+        </div>
       </form>
     </choose>
     <br /><br />
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
