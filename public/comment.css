@@ -1,34 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
 body {
   background-color: #272727;
   text-align: center;
   color: aliceblue;
+  overflow-x: hidden;
+  scrollbar-width: none;
 }
-div {
-  border: 5px solid rgb(128, 0, 111);
-  border-radius: 132px;
+body::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+.main {
+  border-radius: 2px;
   width: 700px;
-  height: 500px;
+  height: 450px;
   align-items: center;
-  border-left-width: 34.988;
   margin-right: 200px;
-  margin-top: 100px;
-  margin-left: 300px;
+  margin-top: 50px;
+  margin-left: 270px;
+  margin-bottom: 20px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 input {
   border-radius: 5px;
-  width: 500px;
+  width: 550px;
   height: 30px;
+}
+.name-input {
+  margin-right: 50px;
+}
+.buttons {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 20px;
+  width: 500px;
+  height: 50px;
+  padding-left: 100px;
+}
+.btn {
+  cursor: pointer;
+  margin: 10px;
+  border-radius: 1px;
+  text-decoration: none;
+  padding: 10px;
+  font-size: 22px;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  display: inline-block;
+}
+.btn:hover {
+  cursor: pointer;
+}
+.blue {
+  color: #55acee;
+  border: 2px #55acee solid;
+}
+.blue:hover {
+  background-color: #55acee;
+  color: #fff;
+}
+.green {
+  color: #2ecc71;
+  border: 2px #2ecc71 solid;
+}
+.green:hover {
+  color: #fff;
+  background-color: #2ecc71;
 }
 
-button {
-  border-radius: 10px;
-  width: 100px;
-  height: 30px;
-}
-button:hover {
-  background-color: black;
-  color: white;
-}
 h1 {
   margin-left: 25px;
   border-top-width: 9px;
@@ -37,20 +85,42 @@ h1 {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-weight: bold;
   font-style: oblique;
-  color: orange;
+  color: #adadad;
+  text-decoration: underline overline #ff3028;
+}
+.header {
+  font-size: 50px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: bold;
+  font-style: oblique;
+  margin-left: 360px;
+  animation: type-header 5s steps(15);
+  animation-iteration-count: infinite;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 4px solid #bfbfbf;
+  width: 15ch;
+}
+@keyframes type-header {
+  0% {
+    width: 0ch;
+  }
+  100% {
+    width: 15ch;
+  }
 }
 .name-label {
   float: left;
   float: left;
-  padding-left: 100px;
+  padding-left: 50px;
 }
 .rating-label {
-  margin-right: 450px;
+  margin-right: 530px;
 }
 .rating {
   float: left;
   display: inline;
-  padding-left: 145px;
+  padding-left: 50px;
 }
 .rating-3,
 .rating-4,
@@ -60,14 +130,8 @@ h1 {
   height: 20px;
 }
 .write-review-label {
-  margin-right: 350px;
+  margin-right: 420px;
 }
 .text-area {
   border-radius: 5px;
-}
-.post {
-  background-color: red;
-}
-.home {
-  background-color: orange;
 }
