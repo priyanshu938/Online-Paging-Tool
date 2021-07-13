@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap");
-
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
 body {
   background-color: #272727;
   text-align: center;
@@ -16,14 +16,15 @@ html {
   scroll-behavior: smooth;
 }
 .main {
-  border: 5px solid rgb(128, 0, 111);
-  border-radius: 132px;
+  border-radius: 2px;
   width: 700px;
-  height: 500px;
+  height: 400px;
   align-items: center;
   margin-right: 200px;
   margin-top: 100px;
   margin-left: 300px;
+  margin-bottom: 100px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 .about-div {
   width: 800px;
@@ -42,48 +43,66 @@ input {
   height: 30px;
 }
 
-button {
-  font-family: "Fugaz One", cursive;
-  font-size: 15px;
-  border-radius: 10px;
-  width: 100px;
-  height: 30px;
+.buttons {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 20px;
+  width: 500px;
+  height: 50px;
+  padding-left: 100px;
 }
-button:hover {
-  background-color: black;
-  color: white;
+.btn {
+  cursor: pointer;
+  margin: 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  padding: 10px;
+  font-size: 22px;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  display: inline-block;
 }
-#fifo {
-  background-color: red;
-  color: black;
+
+.btn:hover {
+  cursor:pointer;
 }
-#lru {
-  background-color: greenyellow;
-  color: black;
+.blue {
+  color: #55acee;
+  border: 2px #55acee solid;
 }
-#lfu {
-  background-color: blue;
-  color: black;
+.blue:hover {
+  background-color: #55acee;
+  color: #fff;
 }
-#optimal {
-  background-color: yellow;
-  color: black;
+.green {
+  color: #2ecc71;
+  border: 2px #2ecc71 solid;
 }
-#fifo:hover {
-  background-color: black;
-  color: white;
+
+.green:hover {
+  color: #fff;
+  background-color: #2ecc71;
 }
-#lru:hover {
-  background-color: black;
-  color: white;
+
+.red {
+  color: #e74c3c;
+  border: 2px #e74c3c solid;
 }
-#lfu:hover {
-  background-color: black;
-  color: white;
+
+.red:hover {
+  color: #fff;
+  background-color: #e74c3c;
 }
-#optimal:hover {
-  background-color: black;
-  color: white;
+
+.purple {
+  color: #9b59b6;
+  border: 2px #9b59b6 solid;
+}
+.purple:hover {
+  color: #fff;
+  background-color: #9b59b6;
 }
 h1 {
   margin-left: 25px;
@@ -93,6 +112,7 @@ h1 {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-weight: bold;
   font-style: oblique;
+  color: #ffcc66;
 }
 .header {
   font-size: 50px;
