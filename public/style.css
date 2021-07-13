@@ -158,7 +158,7 @@ img {
 ul {
   list-style-type: none;
   margin: 0;
-  padding: 0;
+  padding-right: 50px;
   overflow: hidden;
 }
 
@@ -198,7 +198,7 @@ li:hover {
   text-transform: uppercase;
 }
 .footer {
-  margin-left: 530px;
+  margin-left: 450px;
 }
 .insta,
 .fb,
@@ -277,3 +277,4 @@ li:hover {
 .social-div {
   margin: auto;
 }
+.my-photo{float:left}
