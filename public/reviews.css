@@ -31,7 +31,7 @@ html {
   font-weight: bold;
   font-style: oblique;
   margin-left: 400px;
-  animation: type-header 5s steps(7);
+  animation: type-header 3s steps(7);
   animation-iteration-count: infinite;
   overflow: hidden;
   white-space: nowrap;
