@@ -155,13 +155,16 @@ li:hover {
   transition: 0.3s;
   text-shadow: 1px 1px grey;
 }
-.b {
+.content {
   font-size: large;
   font-family: "Inconsolata", monospace;
   font-weight: bold;
   padding: 10px 10px;
   margin-top: 20px;
   line-height: 50px;
+}
+.content:hover {
+  text-transform: uppercase;
 }
 footer {
   margin-left: 530px;
