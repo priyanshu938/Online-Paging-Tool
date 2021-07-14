@@ -14,7 +14,8 @@ body::-webkit-scrollbar {
 }
 html {
   scroll-behavior: smooth;
-}h1 {
+}
+h1 {
   margin-left: 25px;
   border-top-width: 9px;
   border-bottom-width: 14px;
@@ -30,8 +31,9 @@ html {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-weight: bold;
   font-style: oblique;
-  margin:auto;
-  margin-top: 50px;margin-bottom: 50px;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
   animation: type-header 3s steps(8);
   animation-iteration-count: infinite;
   overflow: hidden;
@@ -50,9 +52,8 @@ html {
 .buttons {
   width: 500px;
   height: 50px;
-  margin:auto;
+  margin: auto;
   margin-bottom: 50px;
-
 }
 .btn {
   cursor: pointer;
@@ -88,10 +89,19 @@ html {
   color: #fff;
   background-color: #2ecc71;
 }
-
 .default {
   float: left;
-  margin-left: 100px;
+}
+.comments-div {
+  height: 300px;
+  width: 1000px;
+  margin: auto;
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
+.comments-div::-webkit-scrollbar {
+  width: 0;
+  height: 0;
 }
 .dp-icon {
   width: 30px;
@@ -121,4 +131,3 @@ hr {
   height: 1px;
   color: gray;
 }
-
