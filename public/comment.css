@@ -47,6 +47,8 @@ input::placeholder,textarea::placeholder {
   width: 500px;
   height: 50px;
   padding-left: 100px;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 .btn {
   cursor: pointer;

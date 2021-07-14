@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Paging</title>
     <link rel="stylesheet" href="comment.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
 
   <body>
     <comment id="comment">
-      <h1 class="header">Comment Section</h1>
-      <div class="main">
+      <h1 class="header" data-aos="fade-right">Comment Section</h1>
+      <div class="main" data-aos="fade-down">
         <form action="/comment" method="POST" autocomplete="off">
           <br />
           <br />
@@ -41,15 +42,31 @@
             cols="72"
             rows="8"
           ></textarea
-          ><br /><br /><br /><br />
-<div class="buttons">
-  <button class="btn green" type="submit" name="post">Post</button>
-  <button class="btn red" name="back" type="submit">Home</button>
-</div>
-          
-          <br /><br /><br />
+          >
+          <div class="buttons">
+            <button
+              class="btn green"
+              type="submit"
+              name="post"
+              data-aos="fade-up"
+            >
+              Post
+            </button>
+            <button
+              class="btn red"
+              name="back"
+              type="submit"
+              data-aos="fade-up"
+            >
+              Home
+            </button>
+          </div>
         </form>
       </div>
     </comment>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
   </body>
 </html>
