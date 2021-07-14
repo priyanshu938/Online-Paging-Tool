@@ -194,9 +194,6 @@ li:hover {
   margin-top: 20px;
   line-height: 50px;
 }
-.content:hover {
-  text-transform: uppercase;
-}
 .footer {
   margin-left: 450px;
 }
@@ -277,4 +274,6 @@ li:hover {
 .social-div {
   margin: auto;
 }
-.my-photo{float:left}
+.my-photo {
+  float: left;
+}

@@ -14,13 +14,14 @@
     </h1>
 
     <div>
-        <h3 class="page-Heading">Page Reference String :<br><br>
+        <p class="page-Heading">Page Reference String :
             <%=reference_string %> <br>
-        </h3>
-        <h3>Number of Frames: <%=number_of_frames %>
-        </h3>
-        <h2>OUTPUT:</h2>
-        <table>
+        </p>
+        <p>Number of Frames: <%=number_of_frames %>
+        </p>
+        <p>OUTPUT:</p>
+        <div class="output">
+        <table >
             <tr>
                 <% for (var i=0; i <number_of_frames; i++){ %>
                     <% for (var j=0; j <length_of_string; j++) {%>
@@ -29,7 +30,7 @@
                             <% } %>
 
                                 <% if(string_frames[i][j]!=-1){ %>
-                                    <td><button>
+                                    <td><button class="output-buttons btn green">
                                             <%=string_frames[i][j] %>
                                         </button></td>
                                     <% } %>
@@ -46,7 +47,7 @@
                             <td> </td>
                             <% } %>
                                 <% if(hit_string[i]!=" " ){ %>
-                                    <td> <button style="background-color: brown;">
+                                    <td> <button class="output-buttons btn red">
                                             <%=hit_string[i] %>
                                         </button></td>
                                     <% } %>
@@ -54,16 +55,17 @@
                                         <% } %>
                 </tr>
         </table>
-        <h3>Number of page faults : <%=length_of_string-count %>
-        </h3>
-        <h3>Number of page hits : <%=count %>
-        </h3>
+    </div>
+        <p>Number of page faults : <%=length_of_string-count %>
+        </p>
+        <p>Number of page hits : <%=count %>
+        </p>
         <br>
+        <div class="buttons">
         <form action="/list" method="post">
-            <button class="back" type="submit">Back</button>
+            <button class="btn red" type="submit">Back</button>
         </form>
-
+    </div>
     </div>
 </body>
-
 </html>
