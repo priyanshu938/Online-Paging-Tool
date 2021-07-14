@@ -1,4 +1,4 @@
-const dotenv = require('dotenv');
+const dotenv = require("dotenv");
 dotenv.config();
 const express = require("express");
 const bodyParser = require("body-parser");
@@ -63,7 +63,7 @@ app.post("/", function (req, res) {
         }
       }
       res.render("list", {
-        type: "FIFO",
+        type: "Fifo",
         reference_string: reference_string,
         count: length_of_string - count,
         number_of_frames: number_of_frames,
@@ -141,7 +141,7 @@ app.post("/", function (req, res) {
         }
       }
       res.render("list", {
-        type: "LRU",
+        type: "Lru",
         reference_string: reference_string,
         count: length_of_string - faults,
         number_of_frames: number_of_frames,
@@ -205,7 +205,7 @@ app.post("/", function (req, res) {
       }
 
       res.render("list", {
-        type: "LFU",
+        type: "Lfu",
         reference_string: reference_string,
         count: hit,
         number_of_frames: number_of_frames,
@@ -283,7 +283,7 @@ app.post("/", function (req, res) {
         }
       }
       res.render("list", {
-        type: "OPTIMAL",
+        type: "Optimal",
         reference_string: reference_string,
         count: length_of_string - page_faults,
         number_of_frames: number_of_frames,
