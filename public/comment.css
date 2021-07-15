@@ -30,12 +30,14 @@ input {
   width: 550px;
   height: 30px;
 }
-input:focus,textarea:focus {
+input:focus,
+textarea:focus {
   outline: none !important;
-  border-color: black ;
-  box-shadow: 0 0 30px #719ECE;
+  border-color: black;
+  box-shadow: 0 0 30px #719ece;
 }
-input::placeholder,textarea::placeholder {
+input::placeholder,
+textarea::placeholder {
   font-family: "Inconsolata", monospace;
   font-weight: bold;
   color: gray;
@@ -100,9 +102,9 @@ h1 {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-weight: bold;
   font-style: oblique;
-  margin:auto;
-   margin-top: 50px;
-   margin-bottom:50px;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
   animation: type-header 5s steps(15);
   animation-iteration-count: infinite;
   overflow: hidden;
@@ -143,4 +145,66 @@ h1 {
 }
 .text-area {
   border-radius: 5px;
+}
+/* mobile responsive */
+@media (min-width: 320px) and (max-width: 768px) {
+  .main {
+    width: 300px;
+    height: 370px;
+  }
+  input {
+    border-radius: 5px;
+    width: 270px;
+    height: 30px;
+  }
+  .name-input {
+    margin-right: 0px;
+  }
+  .buttons {
+    width: 300px;
+    height: 100px;
+    padding-left: 0px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin: auto;
+  }
+  .btn {
+    margin: 10px;
+    padding: 10px;
+    font-size: 15px;
+  }
+  h1 {
+    margin-left: 15px;
+    border-top-width: 9px;
+    border-bottom-width: 14px;
+    font-size: 20px;
+  }
+  .header {
+    font-size: 30px;
+  }
+
+  .name-label {
+    padding-left: 10px;
+  }
+  .rating-label {
+    margin-right: 0px;
+    padding-right: 200px;
+  }
+  .rating {
+    padding-left: 10px;
+  }
+  .rating-3,
+  .rating-4,
+  .rating-5 {
+    height: 15px;
+  }
+  .write-review-label {
+    margin-right: 0px;
+    padding-right: 100px;
+  }
+  .text-area {
+    border-radius: 5px;
+    width: 270px;
+    height: 70px;
+  }
 }
