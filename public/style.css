@@ -194,9 +194,7 @@ li:hover {
   margin-top: 20px;
   line-height: 50px;
 }
-.footer {
-  margin-left: 450px;
-}
+
 .insta,
 .fb,
 .linkedIn,
@@ -274,30 +272,85 @@ li:hover {
 .social-div {
   margin: auto;
 }
+.footer {
+  margin-left: 450px;
+}
 .my-photo {
   float: left;
 }
 
 /* mobile responsive */
-@media (min-width: 320px) and (max-width: 1024px) {
+@media (min-width: 320px) and (max-width: 768px) {
   .about-div {
-    width: 600px;
+    width: 400px;
     height: 500px;
     padding-left: 5px;
   }
   .content {
-    font-size: 20px;
+    font-size: 15px;
+    line-height: 30px;
   }
   .use {
     text-align: start;
-    padding-right: 100px;
-    padding-top: 200px;
-    padding-left: 350px;
-    padding-bottom: 400px;
+    padding-right: 30px;
+    padding-left: 250px;
+    padding-bottom: 200px;
     width: 300px;
     height: 100px;
   }
   .use-div {
-    padding-right: 5px;
+    padding-right: 30px;
+  }
+
+  .main {
+    margin: auto;
+    margin-left: 20px;
+    align-items: center;
+    width: 500px;
+    height: 450px;
+  }
+  input {
+    border-radius: 2px;
+    width: 400px;
+    height: 30px;
+    text-decoration: none;
+  }
+
+  .buttons {
+    width: 500px;
+    height: 30px;
+    padding-left: 0px;
+  }
+  .btn {
+    cursor: pointer;
+    margin: 0px;
+
+    font-size: 22px;
+    display: inline-block;
+  }
+  h1 {
+    margin-left: 25px;
+    border-top-width: 10px;
+    border-bottom-width: 10px;
+    font-size: 35px;
+  }
+  .tool-name {
+    margin: auto;
+    padding: 40px;
+  }
+  .header {
+    font-size: 35px;
+    margin: auto;
+    margin-bottom: 30px;
+    margin-top: 100px;
+    margin-left: 50px;
+  }
+  .footer {
+    width: 100%;
+    margin-left: 60px;
+    padding:50px;
+  }
+  .social-icons {
+    font-size: 23px;
   }
 }
