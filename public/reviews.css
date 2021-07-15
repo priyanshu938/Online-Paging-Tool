@@ -103,9 +103,9 @@ h1 {
   width: 0;
   height: 0;
 }
-.dp-icon {
-  width: 30px;
-  height: 30px;
+.avatar {
+  width: 35px;
+  height: 35px;
   content: icon;
   display: inline;
 }
@@ -166,10 +166,6 @@ hr {
     margin: auto;
   }
   
-  .dp-icon {
-    width: 30px;
-    height: 30px;
-  }
   p {
     display: inline;
   }
