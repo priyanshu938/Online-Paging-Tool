@@ -15,7 +15,7 @@
       <% for(var i=comments.length-1;i>=0;--i){ %>
       <div class="comment-each">
         <default class="default">
-          <img class="dp-icon" src="dp icon.png" alt="" srcset="" />
+          <img class="dp-icon" src="<%" ="comments[i].avatar" % />/>
           <p>
             <b class="comment-name"><%=comments[i].name %>: </b>
             <%=comments[i].review %>
@@ -39,7 +39,7 @@
 
     <choose>
       <form action="/reviews" method="POST" autocomplete="off">
-        <br>
+        <br />
         <div class="buttons">
           <button
             class="btn green"

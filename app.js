@@ -9,6 +9,7 @@ app.use("/favicon.ico", express.static("favicon.ico"));
 const mongoose = require("mongoose");
 mongoose.connect(process.env.MONGO_URL, { useNewUrlParser: true });
 const reviewSchema = new mongoose.Schema({
+  avatar: String,
   name: String,
   review: String,
   rating: String,
@@ -308,6 +309,7 @@ app.post("/comment", function (req, res) {
     var name = req.body.name;
     var review = req.body.review;
     var rating = req.body.rating;
+    var avatar = "https://joeschmoe.io/api/v1/" + name;
 
     let date_ob = new Date();
     let date = ("0" + date_ob.getDate()).slice(-2);
@@ -322,6 +324,7 @@ app.post("/comment", function (req, res) {
     var time = time + " " + date + "/" + month + "/" + year;
 
     const user = new User({
+      avatar: avatar,
       name: name,
       review: review,
       rating: rating,
