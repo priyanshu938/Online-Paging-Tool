@@ -105,19 +105,19 @@ h1 {
   margin: auto;
   margin-top: 50px;
   margin-bottom: 50px;
-  animation: type-header 5s steps(16);
+  animation: type-header 5s steps(17);
   animation-iteration-count: infinite;
   overflow: hidden;
   white-space: nowrap;
   border-right: 4px solid #bfbfbf;
-  width: 16ch;
+  width: 17ch;
 }
 @keyframes type-header {
   0% {
     width: 0ch;
   }
   100% {
-    width: 16ch;
+    width: 17ch;
   }
 }
 .name-label {

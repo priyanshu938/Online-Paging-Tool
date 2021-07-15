@@ -134,19 +134,19 @@ h1 {
   font-style: oblique;
   margin: auto;
   margin-bottom: 30px;
-  animation: type-header 5s steps(26);
+  animation: type-header 5s steps(25);
   animation-iteration-count: infinite;
   overflow: hidden;
   white-space: nowrap;
   border-right: 4px solid #bfbfbf;
-  width: 26ch;
+  width: 25ch;
 }
 @keyframes type-header {
   0% {
     width: 0ch;
   }
   100% {
-    width: 26ch;
+    width: 25ch;
   }
 }
 
@@ -357,7 +357,7 @@ li:hover {
     margin: auto;
     margin-bottom: 30px;
     margin-top: 50px;
-    margin-left: 50px;
+    margin-left: 30px;
   }
   .footer {
     width: 100%;
