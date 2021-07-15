@@ -13,27 +13,30 @@
     <br /><br />
     <div class="comments-div" data-aos="fade-down">
       <% for(var i=comments.length-1;i>=0;--i){ %>
-      <default class="default">
-        <img class="dp-icon" src="dp icon.png" alt="" srcset="" />
-        <p>
-          <b class="comment-name"> <%=comments[i].name %> : </b>
-          <%=comments[i].review %>
-        </p>
-        <p>
-          <b class="rating">Rating :</b>
-
-          <% for(var j=1;j<=parseInt(comments[i].rating);j++){ %> ⭐ <%}%>
-        </p>
-        <br /><br />
-        <disp_time class="comment-time">
-          <%=comments[i].time %>
-        </disp_time> </default
-      ><br /><br /><br /><br /><br />
+      <div class="comment-each">
+        <default class="default">
+          <img class="dp-icon" src="dp icon.png" alt="" srcset="" />
+          <p>
+            <b class="comment-name"><%=comments[i].name %>: </b>
+            <%=comments[i].review %>
+          </p>
+          <br />
+          <br />
+          <p>
+            <b class="rating">Rating:</b>
+            <% for(var j=1;j<=parseInt(comments[i].rating);j++){ %>⭐<%}%>
+          </p>
+          <br /><br />
+          <disp_time class="comment-time"><%=comments[i].time %></disp_time>
+          <br
+        /></default>
+      </div>
+      <br /><br /><br /><br /><br /><br />
       <hr />
-      <br /><br /><br /><br /><br />
+      <br />
       <% } %>
     </div>
-    <br /><br /><br />
+
     <choose>
       <form action="/reviews" method="POST" autocomplete="off">
         <br /><br />
