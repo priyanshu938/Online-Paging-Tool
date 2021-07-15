@@ -18,7 +18,7 @@ html {
 .main {
   border-radius: 2px;
   width: 700px;
-  height: 500px;
+  height: 450px;
   align-items: center;
   margin: auto;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
@@ -41,6 +41,7 @@ input {
   width: 500px;
   height: 30px;
   text-decoration: none;
+  margin-bottom: 20px;
 }
 input:focus {
   outline: none !important;
@@ -56,6 +57,8 @@ input::placeholder {
   width: 500px;
   height: 50px;
   padding-left: 100px;
+  margin-top: 30px;
+
 }
 .btn {
   cursor: pointer;
@@ -281,20 +284,23 @@ li:hover {
 
 /* mobile responsive */
 @media (min-width: 320px) and (max-width: 768px) {
+  
+  
   .about-div {
-    width: 400px;
+    width: 300px;
     height: 500px;
     padding-left: 5px;
   }
   .content {
     font-size: 15px;
-    line-height: 30px;
+    line-height: 25px;
   }
   .use {
     text-align: start;
+    padding-top: 50px;;
     padding-right: 30px;
-    padding-left: 250px;
-    padding-bottom: 200px;
+    padding-left: 100px;
+    padding-bottom: 150px;
     width: 300px;
     height: 100px;
   }
@@ -304,51 +310,58 @@ li:hover {
 
   .main {
     margin: auto;
-    margin-left: 20px;
+    margin-left: 3px;
     align-items: center;
-    width: 500px;
-    height: 450px;
+    width: 300px;
+    height: 280px;
   }
   input {
-    border-radius: 2px;
-    width: 400px;
-    height: 30px;
+    border-radius: 5px;
+    width: 240px;
+    height: 20px;
     text-decoration: none;
+    margin-bottom: 8px;
   }
-
+  input::placeholder {
+    font-family: "Inconsolata", monospace;
+    font-size: 10px;
+    color: gray;
+  }
   .buttons {
-    width: 500px;
+    width: 300px;
     height: 30px;
-    padding-left: 0px;
+    padding-left: 0;
+    margin-top: 20px;
+    
   }
+  #use{overflow:hidden;}
   .btn {
     cursor: pointer;
     margin: 0px;
-
-    font-size: 22px;
+    font-size: 15px;
+    padding:5px;
     display: inline-block;
   }
   h1 {
-    margin-left: 25px;
-    border-top-width: 10px;
-    border-bottom-width: 10px;
-    font-size: 35px;
+    border-top-width: 5px;
+    border-bottom-width: 5px;
+    font-size: 20px;
   }
   .tool-name {
     margin: auto;
-    padding: 40px;
+    padding: 20px;
   }
   .header {
-    font-size: 35px;
+    font-size: 20px;
     margin: auto;
-    margin-bottom: 30px;
-    margin-top: 100px;
+    margin-bottom: 50px;
+    margin-top: 50px;
     margin-left: 50px;
   }
   .footer {
     width: 100%;
-    margin-left: 60px;
-    padding:50px;
+    margin-left: 0px;
+    padding:20px;
   }
   .social-icons {
     font-size: 23px;
