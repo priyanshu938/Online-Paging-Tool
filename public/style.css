@@ -275,7 +275,8 @@ li:hover {
   margin: auto;
 }
 .footer {
-  margin-left: 450px;
+  margin-left: 400px;
+  padding:50px;
 }
 .my-photo {
   float: left;
