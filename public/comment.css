@@ -184,7 +184,7 @@ h1 {
   }
 
   .name-label {
-    padding-left: 10px;
+    padding-left: 20px;
   }
   .rating-label {
     margin-right: 0px;
@@ -200,10 +200,11 @@ h1 {
   }
   .write-review-label {
     margin-right: 0px;
-    padding-right: 100px;
+    padding-right: 110px;
   }
   .text-area {
     border-radius: 5px;
+    margin-left:10px;
     width: 270px;
     height: 70px;
   }
