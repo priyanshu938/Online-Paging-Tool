@@ -27,7 +27,7 @@ html {
 }
 .about-div {
   width: 800px;
-  height: 500px;
+  height: 400px;
   padding-left: 30px;
 }
 .use-div {
@@ -301,11 +301,12 @@ li:hover {
 
   .about-div {
     width: 300px;
-    height: 500px;
+    height: 300px;
     padding-left: 5px;
   }
   .contact-div {
     padding-left: 5px;
+    padding-top: 50px;
   }
   .content {
     font-size: 15px;
@@ -316,7 +317,7 @@ li:hover {
     padding-top: 50px;
     padding-right: 30px;
     padding-left: 100px;
-    padding-bottom: 150px;
+    padding-bottom: 100px;
     width: 300px;
     height: 100px;
   }
@@ -326,7 +327,7 @@ li:hover {
 
   .main {
     margin: auto;
-    margin-left: 10px;
+    margin-left: 20px;
     align-items: center;
     width: 300px;
     height: 260px;
@@ -335,13 +336,10 @@ li:hover {
     border-radius: 5px;
     width: 240px;
     height: 20px;
-    text-decoration: none;
     margin-bottom: 8px;
   }
   input::placeholder {
-    font-family: "Inconsolata", monospace;
     font-size: 10px;
-    color: gray;
   }
   .buttons {
     width: 300px;
@@ -353,7 +351,6 @@ li:hover {
     overflow: hidden;
   }
   .btn {
-    cursor: pointer;
     margin: 0px;
     font-size: 15px;
     padding: 5px;
