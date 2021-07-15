@@ -283,6 +283,21 @@ li:hover {
 
 /* mobile responsive */
 @media (min-width: 320px) and (max-width: 768px) {
+  body {
+    background-color: #272727;
+    text-align: center;
+    color: aliceblue;
+    overflow-x: hidden;
+    scrollbar-width: none;
+  }
+  body::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+
   .about-div {
     width: 300px;
     height: 500px;
@@ -344,6 +359,7 @@ li:hover {
     display: inline-block;
   }
   h1 {
+    margin-left: 8px;
     border-top-width: 5px;
     border-bottom-width: 5px;
     font-size: 20px;
