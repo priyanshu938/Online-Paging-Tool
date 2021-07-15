@@ -58,7 +58,6 @@ input::placeholder {
   height: 50px;
   padding-left: 100px;
   margin-top: 30px;
-
 }
 .btn {
   cursor: pointer;
@@ -284,11 +283,12 @@ li:hover {
 
 /* mobile responsive */
 @media (min-width: 320px) and (max-width: 768px) {
-  
-  
   .about-div {
     width: 300px;
     height: 500px;
+    padding-left: 5px;
+  }
+  .contact-div {
     padding-left: 5px;
   }
   .content {
@@ -297,7 +297,7 @@ li:hover {
   }
   .use {
     text-align: start;
-    padding-top: 50px;;
+    padding-top: 50px;
     padding-right: 30px;
     padding-left: 100px;
     padding-bottom: 150px;
@@ -313,7 +313,7 @@ li:hover {
     margin-left: 3px;
     align-items: center;
     width: 300px;
-    height: 280px;
+    height: 260px;
   }
   input {
     border-radius: 5px;
@@ -332,14 +332,15 @@ li:hover {
     height: 30px;
     padding-left: 0;
     margin-top: 20px;
-    
   }
-  #use{overflow:hidden;}
+  #use {
+    overflow: hidden;
+  }
   .btn {
     cursor: pointer;
     margin: 0px;
     font-size: 15px;
-    padding:5px;
+    padding: 5px;
     display: inline-block;
   }
   h1 {
@@ -354,14 +355,14 @@ li:hover {
   .header {
     font-size: 20px;
     margin: auto;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     margin-top: 50px;
     margin-left: 50px;
   }
   .footer {
     width: 100%;
     margin-left: 0px;
-    padding:20px;
+    padding: 20px;
   }
   .social-icons {
     font-size: 23px;
