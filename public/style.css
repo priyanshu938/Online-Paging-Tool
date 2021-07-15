@@ -277,6 +277,7 @@ li:hover {
 .footer {
   margin-left: 400px;
   padding:50px;
+  margin-bottom:30px
 }
 .my-photo {
   float: left;
@@ -363,6 +364,7 @@ li:hover {
     width: 100%;
     margin-left: 0px;
     padding: 20px;
+    
   }
   .social-icons {
     font-size: 23px;
