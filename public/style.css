@@ -285,5 +285,8 @@ li:hover {
     height: 5000px;
     padding-left: 5px;
   }
+  .content{
+    font-size:20px;
+  }
 
 }
