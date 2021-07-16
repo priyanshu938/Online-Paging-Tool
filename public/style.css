@@ -25,13 +25,23 @@ html {
     rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
     rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
+.about {
+  text-align: start;
+}
+.use {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.contact {
+  text-align: start;
+}
 .about-div {
   width: 800px;
   height: 400px;
   padding-left: 30px;
 }
 .use-div {
-  padding-right: 100px;
+  margin-right: 10px;
 }
 .contact-div {
   padding-left: 30px;
@@ -146,7 +156,7 @@ h1 {
     width: 0ch;
   }
   100% {
-    width: 26ch;
+    width: 23ch;
   }
 }
 
@@ -195,6 +205,7 @@ li:hover {
   padding: 10px;
   margin-top: 20px;
   line-height: 50px;
+  text-align: start;
 }
 
 .insta,
@@ -203,16 +214,7 @@ li:hover {
 .github {
   float: left;
 }
-.about {
-  text-align: start;
-}
-.use {
-  text-align: start;
-  padding-left: 760px;
-}
-.contact {
-  text-align: start;
-}
+
 #about {
   animation: type-about 3s steps(7);
   animation-iteration-count: infinite;
@@ -230,19 +232,19 @@ li:hover {
   }
 }
 #use {
-  animation: type-use 3s steps(12);
+  animation: type-use 3s steps(11);
   animation-iteration-count: infinite;
   overflow: hidden;
   white-space: nowrap;
   border-right: 4px solid #bfbfbf;
-  width: 12ch;
+  width: 11ch;
 }
 @keyframes type-use {
   0% {
     width: 0ch;
   }
   100% {
-    width: 12ch;
+    width: 10ch;
   }
 }
 #contact {
@@ -275,9 +277,11 @@ li:hover {
   margin: auto;
 }
 .footer {
-  margin-left: 400px;
-  padding:50px;
-  margin-bottom:30px
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 50px;
+  margin-bottom: 30px;
 }
 .my-photo {
   float: left;
@@ -285,7 +289,6 @@ li:hover {
 
 /* mobile responsive */
 @media (min-width: 320px) and (max-width: 768px) {
-
   .about-div {
     width: 300px;
     height: 300px;
@@ -293,29 +296,17 @@ li:hover {
   }
   .contact-div {
     padding-left: 5px;
-    padding-top: 50px;
+    padding-top: 10px;
   }
   .content {
     font-size: 15px;
     line-height: 25px;
   }
   .use {
-    text-align: start;
-    padding-top: 50px;
-    padding-right: 30px;
-    padding-left: 100px;
-    padding-bottom: 100px;
-    width: 300px;
-    height: 100px;
-  }
-  .use-div {
-    padding-right: 30px;
+    margin-top: 30px;
   }
 
   .main {
-    margin: auto;
-    margin-left: 20px;
-    align-items: center;
     width: 300px;
     height: 260px;
   }
@@ -358,14 +349,11 @@ li:hover {
     margin: auto;
     margin-bottom: 30px;
     margin-top: 50px;
-    margin-left: 30px;
   }
-  .footer {
-    width: 100%;
-    margin-left: 0px;
-    padding: 20px;
-    
-  }
+.footer{
+  padding:0px;
+  padding-bottom: 30px;
+}
   .social-icons {
     font-size: 23px;
   }
