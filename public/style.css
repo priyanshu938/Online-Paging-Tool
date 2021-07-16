@@ -163,7 +163,7 @@ h1 {
 img {
   width: 70px;
   height: 70px;
-  padding-right: 600px;
+  /* padding-right: 600px; */
 }
 .navbar ul {
   display: flex;
@@ -179,7 +179,7 @@ img {
   color: whitesmoke;
 }
 .navbar-logo {
-  flex: 1;
+  
   width:100px;
   justify-content: flex-start;
 }
@@ -311,7 +311,7 @@ img {
   flex-direction: row;
   justify-content: center;
   padding: 50px;
-  margin-bottom: 30px;
+  margin-bottom: 60px;
 }
 
 /* media query for hamburger icon */
@@ -405,7 +405,6 @@ img {
   img{ 
     width: 40px;
     height: 40px;
-    padding-right: 50px;
-
+    
   }
 }
