@@ -8,23 +8,25 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <br><br>
-    <ul>
-        <li><a href="/comment">Comment</a></li>
-        <li><a href="/reviews">Reviews</a></li>
-        <li class="my-photo"><a href="/"><img src="profile.png"></a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="#use">How To use?</a></li>
-        <li><a href="#about">About</a></li>
-    </ul>
+    <br>
+
+    <nav class="navbar">
+        <ul>
+            <li class="navbar-logo"><a href="/"><img src="profile.png"></a></li>
+            <li class="navbar-toggle"><i class="fas fa-bars"></i></li>
+            <li class="navbar-links"><a href="#about">About</a></li>
+            <li class="navbar-links"><a href="#use">How to use?</a></li>
+            <li class="navbar-links"><a href="#contact">Contact</a></li>
+            <li class="navbar-links"><a href="/comment">Comment</a></li>
+            <li class="navbar-links"><a href="/reviews">Reviews</a></li>
+
+        </ul>
     </nav>
-
     <p class="header">Made with 💖 by Priyanshu.</p>
-
     <div class="main" data-aos="fade-down">
         <h1 class="tool-name">The Online Paging Tool</h1><br>
         <form action="/" method="POST" autocomplete="off">
@@ -71,15 +73,18 @@
         </div>
 
         <div class="footer" data-aos="fade-up">
-            <ul>
+            <ul class="footer-ul">
                 <div class="social-div">
-                    <li class="insta"><a href="https://www.instagram.com/priyanshu_tiwari_6789/"><i
+                    <li class="footer-li insta"><a class="footer-a"
+                            href="https://www.instagram.com/priyanshu_tiwari_6789/"><i
                                 class="fab fa-instagram social-icons" style="color: #ff0066;"></i></a></li>
-                    <li class="fb"><a href="https://www.facebook.com/profile.php?id=100027421176030"><i
+                    <li class="footer-li fb"><a class="footer-a"
+                            href="https://www.facebook.com/profile.php?id=100027421176030"><i
                                 class="fab fa-facebook social-icons" style="color: #4040a1;"></i></a></li>
-                    <li class="linkedIn"><a href="https://www.linkedin.com/in/priyanshu-tiwari-602586199/"><i
+                    <li class="footer-li linkedIn"><a class="footer-a"
+                            href="https://www.linkedin.com/in/priyanshu-tiwari-602586199/"><i
                                 class="fab fa-linkedin social-icons" style="color: #034f84;"></i></a></li>
-                    <li class="github"><a href="https://github.com/priyanshu938"><i
+                    <li class="footer-li github"><a class="footer-a" href="https://github.com/priyanshu938"><i
                                 class="fab fa-github social-icons"></i></a>
                     </li>
                 </div>
@@ -92,7 +97,15 @@
     <script>
         AOS.init();
     </script>
-
 </body>
+<script>
+    const toggleButton = document.getElementsByClassName('navbar-toggle')[0];
+    const navbarLinks = document.getElementsByClassName('navbar-links');
+    toggleButton.addEventListener('click', function () {
+        for (var i = 0; i < navbarLinks.length; i++) {
+            navbarLinks[i].classList.toggle('active');
+        }
+    });
+</script>
 
 </html>
