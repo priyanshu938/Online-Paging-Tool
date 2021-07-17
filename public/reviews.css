@@ -103,6 +103,10 @@ h1 {
   width: 0;
   height: 0;
 }
+.comment-each
+{
+  margin-bottom:150px;
+}
 .avatar {
   width: 35px;
   height: 35px;
