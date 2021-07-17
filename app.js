@@ -3,7 +3,6 @@ dotenv.config();
 const express = require("express");
 const bodyParser = require("body-parser");
 const app = express();
-const alert = require("alert");
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use("/favicon.ico", express.static("favicon.ico"));
 const mongoose = require("mongoose");
@@ -28,9 +27,9 @@ app.post("/", function (req, res) {
   var reference_string = req.body.num2.trim();
   var page_string = reference_string.split(" ");
   var length_of_string = page_string.length;
-  if (!length_of_string || !number_of_frames) {
-    alert("Values cannot be empty !");
-  } else {
+  // if (!length_of_string || !number_of_frames) {
+  //   alert("Values cannot be empty !");
+  // } else {
     if (req.body.hasOwnProperty("fifo")) {
       var i,
         j,
@@ -293,7 +292,7 @@ app.post("/", function (req, res) {
         hit_string: disp_hit,
       });
     }
-  }
+  // }
 });
 app.post("/list", function (req, res) {
   res.redirect("/");
