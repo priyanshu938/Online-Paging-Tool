@@ -179,7 +179,7 @@ img {
   color: whitesmoke;
 }
 .navbar-logo {
-  width:100px;
+  width: 100px;
   justify-content: flex-start;
 }
 .navbar-toggle {
@@ -312,7 +312,7 @@ img {
   padding: 50px;
   margin-bottom: 60px;
 }
-iframe{
+iframe {
   width: 700px;
   height: 500px;
 }
@@ -402,13 +402,14 @@ iframe{
     padding: 0px;
     padding-bottom: 30px;
   }
-  img{ 
+  img {
     width: 40px;
     height: 40px;
-    
   }
-  .social-icons{font-size: 23px;}
-  iframe{
+  .social-icons {
+    font-size: 23px;
+  }
+  iframe {
     width: 300px;
     height: 200px;
   }
