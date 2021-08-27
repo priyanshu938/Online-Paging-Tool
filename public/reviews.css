@@ -34,21 +34,10 @@ h1 {
   margin: auto;
   margin-top: 50px;
   margin-bottom: 50px;
-  animation: type-header 3s steps(8);
-  animation-iteration-count: infinite;
   overflow: hidden;
   white-space: nowrap;
-  border-right: 4px solid #bfbfbf;
-  width: 8ch;
 }
-@keyframes type-header {
-  0% {
-    width: 0ch;
-  }
-  100% {
-    width: 8ch;
-  }
-}
+
 .buttons {
   width: 500px;
   height: 50px;
@@ -103,9 +92,8 @@ h1 {
   width: 0;
   height: 0;
 }
-.comment-each
-{
-  margin-bottom:150px;
+.comment-each {
+  margin-bottom: 150px;
 }
 .avatar {
   width: 35px;
@@ -139,15 +127,13 @@ hr {
 
 /* mobile responsive */
 @media (min-width: 320px) and (max-width: 768px) {
- 
   .header {
     font-size: 30px;
     margin: auto;
     margin-top: 40px;
     margin-bottom: 40px;
-    
   }
-  
+
   .buttons {
     width: 300px;
     height: 100px;
@@ -159,7 +145,6 @@ hr {
     border-radius: 5px;
     padding: 10px;
     font-size: 15px;
-    
   }
   .default {
     float: start;
@@ -169,12 +154,11 @@ hr {
     width: 300px;
     margin: auto;
   }
-  
+
   p {
     display: inline;
   }
   .comment-name {
-  
     padding-left: 10px;
   }
   .rating {
@@ -187,5 +171,4 @@ hr {
     height: 0px;
     color: gray;
   }
-  
 }

@@ -17,6 +17,9 @@
     <nav class="navbar" data-aos="fade-right">
         <ul>
             <li class="navbar-toggle"><i class="fas fa-bars"></i></li>
+            <li class="navbar-cross invisible">
+                <i class="fas fa-times"></i>
+              </li>
             <li class="navbar-links navbar-logo"><a href="/"><img src="profile.png"></a></li>
             <li class="navbar-links"><a href="#about">About</a></li>
             <li class="navbar-links"><a href="#use">How to use?</a></li>
@@ -103,12 +106,35 @@
     </script>
 </body>
 <script>
-    const toggleButton = document.getElementsByClassName('navbar-toggle')[0];
-    const navbarLinks = document.getElementsByClassName('navbar-links');
-    toggleButton.addEventListener('click', function () {
-        for (var i = 0; i < navbarLinks.length; i++) {
-            navbarLinks[i].classList.toggle('active');
-        }
+    // const toggleButton = document.getElementsByClassName('navbar-toggle')[0];
+    // const navbarLinks = document.getElementsByClassName('navbar-links');
+    // toggleButton.addEventListener('click', function () {
+    //     for (var i = 0; i < navbarLinks.length; i++) {
+    //         navbarLinks[i].classList.toggle('active');
+    //     }
+    // });
+    const toggleButton = document.getElementsByClassName("navbar-toggle")[0];
+    const toggleCross = document.getElementsByClassName("navbar-cross")[0];
+
+    const navbarLinks = document.getElementsByClassName("navbar-links");
+
+    toggleButton.addEventListener("click", function () {
+      toggleCross.style.display = "block";
+      toggleButton.style.display = "none";
+      toggleCross.classList.add("visible");
+      toggleCross.classList.remove("invisible");
+      for (var i = 0; i < navbarLinks.length; i++) {
+        navbarLinks[i].style.display = "block";
+      }
+    });
+    toggleCross.addEventListener("click", function () {
+      toggleButton.style.display = "block";
+      toggleCross.style.display = "none";
+      toggleCross.classList.remove("visible");
+      toggleCross.classList.add("invisible");
+      for (var i = 0; i < navbarLinks.length; i++) {
+        navbarLinks[i].style.display = "none";
+      }
     });
 </script>
 

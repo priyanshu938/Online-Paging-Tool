@@ -196,6 +196,12 @@ img {
   text-decoration-style: solid;
   text-decoration-thickness: 3px;
 }
+.visible {
+  display: block;
+}
+.invisible {
+  display: none !important;
+}
 .footer-ul {
   list-style-type: none;
   margin: 0;
@@ -245,52 +251,16 @@ img {
 }
 
 #about {
-  animation: type-about 3s steps(7);
-  animation-iteration-count: infinite;
   overflow: hidden;
   white-space: nowrap;
-  border-right: 4px solid #bfbfbf;
-  width: 7ch;
-}
-@keyframes type-about {
-  0% {
-    width: 0ch;
-  }
-  100% {
-    width: 7ch;
-  }
 }
 #use {
-  animation: type-use 3s steps(11);
-  animation-iteration-count: infinite;
   overflow: hidden;
   white-space: nowrap;
-  border-right: 4px solid #bfbfbf;
-  width: 11ch;
-}
-@keyframes type-use {
-  0% {
-    width: 0ch;
-  }
-  100% {
-    width: 10ch;
-  }
 }
 #contact {
-  animation: type-contact 3s steps(11);
-  animation-iteration-count: infinite;
   overflow: hidden;
   white-space: nowrap;
-  border-right: 4px solid #bfbfbf;
-  width: 11ch;
-}
-@keyframes type-contact {
-  0% {
-    width: 0ch;
-  }
-  100% {
-    width: 11ch;
-  }
 }
 #about,
 #use,
