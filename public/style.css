@@ -344,6 +344,7 @@ iframe {
   border: none;
   cursor: pointer;
   font-size: 18px;
+  height: 50px;
 }
 .footer {
   margin: 80px;
