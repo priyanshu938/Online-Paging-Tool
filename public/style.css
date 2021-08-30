@@ -203,37 +203,6 @@ img {
 .invisible {
   display: none !important;
 }
-.footer-ul {
-  list-style-type: none;
-  margin: 0;
-  padding-right: 50px;
-  overflow: hidden;
-}
-
-.footer-li {
-  float: right;
-  font-size: large;
-}
-
-.footer-li .footer-a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-.footer-li .footer-a:hover {
-  text-decoration: underline;
-  text-decoration-color: goldenrod;
-  text-decoration-style: solid;
-  text-decoration-thickness: 3px;
-}
-.footer-li:hover {
-  transform: translateY(-4px);
-  transition: 0.3s;
-  text-shadow: 1px 1px grey;
-}
 .content {
   font-size: large;
   font-family: "Inconsolata", monospace;
@@ -322,7 +291,7 @@ iframe {
   color: #d22938;
   font-weight: 500;
   margin-bottom: 0px;
-  margin-top:5px;
+  margin-top: 5px;
 }
 .contactForm {
   width: 40%;
@@ -375,6 +344,10 @@ iframe {
   border: none;
   cursor: pointer;
   font-size: 18px;
+}
+.footer {
+  margin: 80px;
+  margin-bottom: 0px;
 }
 /* contact media queries */
 @media (max-width: 991px) {
@@ -476,7 +449,8 @@ iframe {
     margin-top: 50px;
   }
   .footer {
-    margin: 50px;
+    margin: 0px;
+    margin-bottom: 0px;
     padding: 0px;
     padding-bottom: 30px;
   }
