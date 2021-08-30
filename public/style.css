@@ -264,8 +264,7 @@ img {
 } */
 #about,
 #use
-/* #contact  */
-{
+/* #contact  */ {
   color: #bfbfbf;
   text-decoration: underline;
   text-decoration-color: #ffcc66;
@@ -367,7 +366,6 @@ iframe {
   position: relative;
   width: 100%;
   margin-top: 10px;
-  
 }
 .contactForm .inputBox input,
 .contactForm .inputBox textarea {
@@ -521,26 +519,26 @@ iframe {
 
   .container-contact .contactInfo .box .text {
     margin-left: 10px;
-    font-size: 10px;
+    font-size: 20px;
     font-weight: 200;
   }
   .container-contact .contactInfo .box .text h3 {
     font-weight: 50;
-    font-size: 15px;
+    font-size: 30px;
   }
   .container-contact .contactInfo .box {
     padding: 10px 0;
   }
   .container-contact .contactInfo .box .icon {
     min-width: 60px;
-    height: 60px;
-    font-size: 30px;
+    height: 50px;
+    font-size: 20px;
   }
   .responsive {
-    font-size: 10px;
+    font-size: 20px;
   }
   .contactForm .inputBox input[type="submit"] {
     width: 100px;
-  height: 30px;
+    height: 40px;
   }
 }

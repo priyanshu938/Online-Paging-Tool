@@ -1,206 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Paging</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-</head>
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<body>
-    <br>
+  <body>
+    <br />
 
     <nav class="navbar" data-aos="fade-right">
-        <ul>
-            <li class="navbar-toggle"><i class="fas fa-bars"></i></li>
-            <li class="navbar-cross invisible">
-                <i class="fas fa-times"></i>
-              </li>
-            <li class="navbar-links navbar-logo"><a href="/"><img src="profile.png"></a></li>
-            <li class="navbar-links"><a href="#about">About</a></li>
-            <li class="navbar-links"><a href="#use">How to use?</a></li>
-            <li class="navbar-links"><a href="#contact">Contact</a></li>
-            <li class="navbar-links"><a href="/comment">Comment</a></li>
-            <li class="navbar-links"><a href="/reviews">Reviews</a></li>
-
-        </ul>
+      <ul>
+        <li class="navbar-toggle"><i class="fas fa-bars"></i></li>
+        <li class="navbar-cross invisible">
+          <i class="fas fa-times"></i>
+        </li>
+        <li class="navbar-links navbar-logo">
+          <a href="/"><img src="profile.png" /></a>
+        </li>
+        <li class="navbar-links"><a href="#about">About</a></li>
+        <li class="navbar-links"><a href="#use">How to use?</a></li>
+        <li class="navbar-links"><a href="#contact">Contact</a></li>
+        <li class="navbar-links"><a href="/comment">Comment</a></li>
+        <li class="navbar-links"><a href="/reviews">Reviews</a></li>
+      </ul>
     </nav>
     <p class="header">Made with 💖 by Priyanshu.</p>
     <div class="main" data-aos="fade-down">
-        <h1 class="tool-name">The Online Paging Tool</h1><br>
-        <form action="/" method="POST" autocomplete="off">
-            <input size="100" type="text" name="num1" placeholder="Enter number of frames..." required><br><br>
-            <input size="100" type="text" name="num2" placeholder="Enter page reference string with spaces..." required>
+      <h1 class="tool-name">The Online Paging Tool</h1>
+      <br />
+      <form action="/" method="POST" autocomplete="off">
+        <input
+          size="100"
+          type="text"
+          name="num1"
+          placeholder="Enter number of frames..."
+          required
+        /><br /><br />
+        <input
+          size="100"
+          type="text"
+          name="num2"
+          placeholder="Enter page reference string with spaces..."
+          required
+        />
 
-            <div class="buttons">
-                <button class="btn blue" type="submit" name="fifo">FIFO</button>
-                <button class="btn green" type="submit" name="lru">LRU</button>
-                <button class="btn red" type="submit" name="lfu">LFU</button>
-                <button class="btn purple" type="submit" name="optimal">OPTIMAL</button>
-            </div>
-        </form>
-    </div>
-    <br><br>
-    <div class="about">
-        <div class="about-div" data-aos="fade-right">
-            <h1 id="about">About</h1>
-            <p class="content">The Online Paging Tool is a web app built using various web technologies. The app asks
-                the use to enter the number of frames and the page
-                reference string and when the user clicks on any of the four buttons : FIFO, LRU , LFU and OPTIMAL , the
-                user sees the corresponding Paging Chart , total number of page faults and page hits.
-            </p>
+        <div class="buttons">
+          <button class="btn blue" type="submit" name="fifo">FIFO</button>
+          <button class="btn green" type="submit" name="lru">LRU</button>
+          <button class="btn red" type="submit" name="lfu">LFU</button>
+          <button class="btn purple" type="submit" name="optimal">
+            OPTIMAL
+          </button>
         </div>
+      </form>
+    </div>
+    <br /><br />
+    <div class="about">
+      <div class="about-div" data-aos="fade-right">
+        <h1 id="about">About</h1>
+        <p class="content">
+          The Online Paging Tool is a web app built using various web
+          technologies. The app asks the use to enter the number of frames and
+          the page reference string and when the user clicks on any of the four
+          buttons : FIFO, LRU , LFU and OPTIMAL , the user sees the
+          corresponding Paging Chart , total number of page faults and page
+          hits.
+        </p>
+      </div>
     </div>
 
     <div class="use">
-        <div class="use-div" data-aos="fade-left">
-            <h1 id="use"> How to use? <br></h1>
-            <p class="content">-> Enter the number of frames.
-                <br>-> Enter the page reference
-                string.<br>-> Click on any of the four
-                buttons <br> &nbsp;&nbsp;&nbsp;to get the desired output.<br>
-            </p>
-        </div>
-    </div>
-    <iframe src="https://www.youtube.com/embed/W1uZ9rn7rik" title="YouTube video player" frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen data-aos="flip-up"></iframe>
-    <!-- <div class="contact">
-        <div class="contact-div" data-aos="fade-right">
-
-            <h1 id="contact"> Contact Us <br></h1>
-            <p class="content"> If you found any type of bug while using this tool, <br>
-                feel free to contact us so that we can rectify it <br> as soon as possible.......<br>
-            </p>
-        </div>
-
-        <div class="footer" data-aos="fade-up">
-            <ul class="footer-ul">
-                <div class="social-div">
-                    <li class="footer-li insta"><a class="footer-a"
-                            href="https://www.instagram.com/priyanshu_tiwari_6789/"><i
-                                class="fab fa-instagram social-icons" style="color: #ff0066;"></i></a></li>
-                    <li class="footer-li fb"><a class="footer-a"
-                            href="https://www.facebook.com/profile.php?id=100027421176030"><i
-                                class="fab fa-facebook social-icons" style="color: #4040a1;"></i></a></li>
-                    <li class="footer-li linkedIn"><a class="footer-a"
-                            href="https://www.linkedin.com/in/priyanshu-tiwari-602586199/"><i
-                                class="fab fa-linkedin social-icons" style="color: #034f84;"></i></a></li>
-                    <li class="footer-li github"><a class="footer-a" href="https://github.com/priyanshu938"><i
-                                class="fab fa-github social-icons"></i></a>
-                    </li>
-
-                </div>
-            </ul>
-        </div>
+      <div class="use-div" data-aos="fade-left">
+        <h1 id="use">How to use? <br /></h1>
+        <p class="content">
+          -> Enter the number of frames. <br />-> Enter the page reference
+          string.<br />-> Click on any of the four buttons <br />
+          &nbsp;&nbsp;&nbsp;to get the desired output.<br />
         </p>
-    </div> -->
+      </div>
+    </div>
+    <iframe
+      src="https://www.youtube.com/embed/W1uZ9rn7rik"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+      data-aos="flip-up"
+    ></iframe>
+
     <section class="contact" id="contact">
-        <div class="content">
-          <h1>Contact</h1>
-        </div>
-        <div class="container-contact">
-          <div class="contactInfo">
-            <div class="box">
-              <div class="icon">
-                <a href="http://www.googlemaps.com">
-                  <i
-                    class="fa fa-map-marker"
-                    aria-hidden="true"
-                    style="color: #d22938"
-                  ></i>
-                </a>
-              </div>
-              <div class="text">
-                <h3>Address</h3>
-                <p class="responsive">Lucknow,Uttar Pradesh.</p>
-              </div>
+      <div class="content">
+        <h1>Contact</h1>
+      </div>
+      <div class="container-contact">
+        <div class="contactInfo">
+          <div class="box">
+            <div class="icon">
+              <a href="http://www.googlemaps.com">
+                <i
+                  class="fa fa-map-marker"
+                  aria-hidden="true"
+                  style="color: #d22938"
+                ></i>
+              </a>
             </div>
-            <div class="box">
-              <div class="icon">
-                <a href="https://www.gmail.com">
-                  <i
-                    class="fa fa-envelope"
-                    aria-hidden="true"
-                    style="color: #d22938"
-                  ></i>
-                </a>
-              </div>
-              <div class="text">
-                <h3>Email</h3>
-                <p class="responsive">priyanshutiwari6789@gmail.com</p>
-              </div>
-            </div>
-            <div class="box">
-              <div class="icon">
-                <a href="https://www.instagram.com/priyanshu_tiwari_6789/">
-                  <i
-                    class="fab fa-instagram-square"
-                    aria-hidden="true"
-                    style="color: #d22938"
-                  ></i>
-                </a>
-              </div>
-              <div class="text">
-                <h3>Instagram</h3>
-              </div>
-            </div>
-            <div class="box">
-              <div class="icon">
-                <a
-                  href="https://www.linkedin.com/in/priyanshu-tiwari-602586199/"
-                >
-                  <i
-                    class="fab fa-linkedin"
-                    aria-hidden="true"
-                    style="color: #d22938"
-                  ></i>
-                </a>
-              </div>
-              <div class="text">
-                <h3>LinkedIn</h3>
-              </div>
+            <div class="text">
+              <h3>Address</h3>
+              <p class="responsive">Lucknow,Uttar Pradesh.</p>
             </div>
           </div>
-          <div class="contactForm">
-            <form
-              action="https://formspree.io/f/xwkaapnq"
-              method="POST"
-            >
-              <h2>Send Message</h2>
-              <div class="inputBox">
-                <input type="text" name="Name : " required="required" />
-                <span>Full Name</span>
-              </div>
-              <div class="inputBox">
-                <input type="text" name="Email : " required="required" />
-                <span>Email</span>
-              </div>
-              <div class="inputBox">
-                <textarea required="required" name="Message : "></textarea>
-                <span>Type your message</span>
-              </div>
-              <div class="inputBox">
-                <input type="submit" name="" value="Send" />
-              </div>
-            </form>
+          <div class="box">
+            <div class="icon">
+              <a href="https://www.gmail.com">
+                <i
+                  class="fa fa-envelope"
+                  aria-hidden="true"
+                  style="color: #d22938"
+                ></i>
+              </a>
+            </div>
+            <div class="text">
+              <h3>Email</h3>
+              <p class="responsive">priyanshutiwari6789@gmail.com</p>
+            </div>
+          </div>
+          <div class="box">
+            <div class="icon">
+              <a href="https://www.instagram.com/priyanshu_tiwari_6789/">
+                <i
+                  class="fab fa-instagram-square"
+                  aria-hidden="true"
+                  style="color: #d22938"
+                ></i>
+              </a>
+            </div>
+            <div class="text">
+              <h3>Instagram</h3>
+            </div>
+          </div>
+          <div class="box">
+            <div class="icon">
+              <a href="https://www.linkedin.com/in/priyanshu-tiwari-602586199/">
+                <i
+                  class="fab fa-linkedin"
+                  aria-hidden="true"
+                  style="color: #d22938"
+                ></i>
+              </a>
+            </div>
+            <div class="text">
+              <h3>LinkedIn</h3>
+            </div>
           </div>
         </div>
-      </section>
-  
-      <!-- footer -->
-      <div class="footer">Copyright &copy 2021 Priyanshu Tiwari.</div>
-      <br /><br />
+        <div class="contactForm">
+          <form action="https://formspree.io/f/xwkaapnq" method="POST">
+            <h2>Send Message</h2>
+            <div class="inputBox">
+              <input type="text" name="Name : " required="required" />
+              <span>Full Name</span>
+            </div>
+            <div class="inputBox">
+              <input type="text" name="Email : " required="required" />
+              <span>Email</span>
+            </div>
+            <div class="inputBox">
+              <textarea required="required" name="Message : "></textarea>
+              <span>Type your message</span>
+            </div>
+            <div class="inputBox">
+              <input type="submit" name="" value="Send" />
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <div class="footer">Copyright &copy 2021 Priyanshu Tiwari.</div>
+    <br /><br />
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-        AOS.init();
+      AOS.init();
     </script>
-</body>
-<script>
+  </body>
+  <script>
     const toggleButton = document.getElementsByClassName("navbar-toggle")[0];
     const toggleCross = document.getElementsByClassName("navbar-cross")[0];
 
@@ -224,6 +218,5 @@
         navbarLinks[i].style.display = "none";
       }
     });
-</script>
-
+  </script>
 </html>
