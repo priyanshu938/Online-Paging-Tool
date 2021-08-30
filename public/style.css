@@ -53,10 +53,10 @@ input {
   text-decoration: none;
   margin-bottom: 20px;
 }
-input:focus {
+input:focus,textarea:focus {
   outline: none !important;
   border-color: black;
-  box-shadow: 0 0 30px #719ece;
+  box-shadow: 0 0 10px #719ece;
 }
 input::placeholder {
   font-family: "Inconsolata", monospace;
