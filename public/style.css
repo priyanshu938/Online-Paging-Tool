@@ -243,12 +243,12 @@ img {
   text-align: start;
 }
 
-.insta,
+/* .insta,
 .fb,
 .linkedIn,
 .github {
   float: left;
-}
+} */
 
 #about {
   overflow: hidden;
@@ -258,33 +258,167 @@ img {
   overflow: hidden;
   white-space: nowrap;
 }
-#contact {
+/* #contact {
   overflow: hidden;
   white-space: nowrap;
-}
+} */
 #about,
-#use,
-#contact {
+#use
+/* #contact  */
+{
   color: #bfbfbf;
   text-decoration: underline;
   text-decoration-color: #ffcc66;
 }
-.social-icons {
+/* .social-icons {
   font-size: 40px;
 }
 .social-div {
   margin: auto;
-}
-.footer {
+} */
+/* .footer {
   display: flex;
   flex-direction: row;
   justify-content: center;
   padding: 50px;
   margin-bottom: 60px;
-}
+} */
 iframe {
   width: 900px;
   height: 400px;
+}
+.contact {
+  color: black;
+  position: relative;
+  min-height: 100vh;
+  padding: 0 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: url("/images/background.svg");
+  background-size: cover;
+}
+.contact .content {
+  max-width: 800px;
+  text-align: center;
+}
+.contact .content h1 {
+  font-size: 36px;
+  font-weight: 500;
+  color: #d22938;
+  text-decoration: underline overline;
+  text-decoration-color: white;
+  margin: 50px;
+  text-underline-offset: 10px;
+}
+
+.container-contact {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+.container-contact .contactInfo {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.container-contact .contactInfo .box {
+  position: relative;
+  padding: 20px 0;
+  display: flex;
+}
+.container-contact .contactInfo .box .icon {
+  min-width: 60px;
+  height: 60px;
+  background: #fff;
+  color: #d22938;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 22px;
+}
+.container-contact .contactInfo .box .text {
+  display: flex;
+  margin-left: 20px;
+  font-size: 16px;
+  color: #fff;
+  flex-direction: column;
+  font-weight: 300;
+}
+.container-contact .contactInfo .box .text h3 {
+  color: #d22938;
+  font-weight: 500;
+}
+.contactForm {
+  width: 40%;
+  padding: 40px;
+  background: #fff;
+}
+.contactForm h2 {
+  font-size: 30px;
+  color: #333;
+  font-weight: 500;
+}
+.contactForm .inputBox {
+  position: relative;
+  width: 100%;
+  margin-top: 10px;
+  
+}
+.contactForm .inputBox input,
+.contactForm .inputBox textarea {
+  width: 100%;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  border: none;
+  border-bottom: 2px solid #333;
+  outline: none;
+  resize: none;
+}
+.contactForm .inputBox span {
+  position: absolute;
+  left: 0;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  pointer-events: none;
+  transition: 0.5s;
+  color: #666;
+}
+.contactForm .inputBox input:focus ~ span,
+.contactForm .inputBox input:valid ~ span,
+.contactForm .inputBox textarea:focus ~ span,
+.contactForm .inputBox textarea:valid ~ span {
+  color: #e91e63;
+  font-size: 12px;
+  transform: translateY(-20px);
+}
+.contactForm .inputBox input[type="submit"] {
+  width: 100px;
+  background: #d22938;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+}
+/* contact media queries */
+@media (max-width: 991px) {
+  .contact {
+    padding: 50px;
+  }
+  .container-contact {
+    flex-direction: column;
+  }
+  .container-contact .contactInfo,
+  .contactForm {
+    margin-bottom: 40px;
+    width: 100%;
+  }
 }
 
 /* media query for hamburger icon */
@@ -376,11 +510,37 @@ iframe {
     width: 40px;
     height: 40px;
   }
-  .social-icons {
+  /* .social-icons {
     font-size: 23px;
-  }
+  } */
   iframe {
     width: 300px;
     height: 200px;
+  }
+  /* contact me responsive */
+
+  .container-contact .contactInfo .box .text {
+    margin-left: 10px;
+    font-size: 10px;
+    font-weight: 200;
+  }
+  .container-contact .contactInfo .box .text h3 {
+    font-weight: 50;
+    font-size: 15px;
+  }
+  .container-contact .contactInfo .box {
+    padding: 10px 0;
+  }
+  .container-contact .contactInfo .box .icon {
+    min-width: 60px;
+    height: 60px;
+    font-size: 30px;
+  }
+  .responsive {
+    font-size: 10px;
+  }
+  .contactForm .inputBox input[type="submit"] {
+    width: 100px;
+  height: 30px;
   }
 }
