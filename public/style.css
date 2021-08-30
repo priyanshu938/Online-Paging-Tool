@@ -431,11 +431,10 @@ iframe {
     height: 260px;
   }
   .about .about-div h1,
-.use .use-div h1 {
-  font-size: 30px;
-  font-weight: 500;
- 
-}
+  .use .use-div h1 {
+    font-size: 30px;
+    font-weight: 500;
+  }
   input {
     border-radius: 5px;
     width: 240px;
@@ -451,9 +450,7 @@ iframe {
     padding-left: 0;
     margin-top: 20px;
   }
-  /* #use {
-    overflow: hidden;
-  } */
+
   .btn {
     margin: 0px;
     font-size: 15px;
@@ -490,7 +487,9 @@ iframe {
     height: 200px;
   }
   /* contact me responsive */
-
+  .contact .content h1 {
+    font-size: 30px;
+  }
   .container-contact .contactInfo .box .text {
     margin-left: 10px;
     font-size: 20px;
